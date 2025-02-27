@@ -2,15 +2,15 @@ import I18nKeys from "./src/locales/keys";
 import type { Configuration } from "./src/types/config";
 
 const YukinaConfig: Configuration = {
-  title: "Yukina",
-  subTitle: "Yukina Template Demo Site",
-  brandTitle: "Yukina",
+  title: "Chanke",
+  subTitle: "Chanke's Blog",
+  brandTitle: "Chanke",
 
-  description: "Demo Site",
+  description: "Chanke's Blog Website",
 
-  site: "https://yukina-blog.vercel.app",
+  site: "https://yichan521.github.io",
 
-  locale: "en", // set for website language and date format
+  locale: "zh-CN", // set for website language and date format
 
   navigators: [
     {
@@ -27,41 +27,41 @@ const YukinaConfig: Configuration = {
     },
     {
       nameKey: I18nKeys.nav_bar_github,
-      href: "https://github.com/WhitePaper233/yukina",
+      href: "https://github.com/Yichan521",
     },
   ],
 
-  username: "WhitePaper 白芷",
-  sign: "Ad Astra Per Aspera.",
-  avatarUrl: "https://s2.loli.net/2025/01/25/FPpTrQSezM8ivbl.webp",
+  username: "Chanke",
+  sign: "愛音ちゃん、幸せ？",
+  avatarUrl: "https://s3.bmp.ovh/imgs/2025/02/27/f310adb0887cac7e.png",
   socialLinks: [
     {
       icon: "line-md:github-loop",
-      link: "https://github.com/WhitePaper233",
+      link: "https://github.com/Yichan521",
     },
     {
       icon: "mingcute:bilibili-line",
-      link: "https://space.bilibili.com/22433608",
+      link: "https://space.bilibili.com/1962278701",
     },
     {
       icon: "mingcute:netease-music-line",
-      link: "https://music.163.com/#/user/home?id=125291648",
+      link: "https://music.163.com/#/user/home?id=1307219338",
     },
   ],
-  maxSidebarCategoryChip: 6, // It is recommended to set it to a common multiple of 2 and 3
+  maxSidebarCategoryChip: 3, // It is recommended to set it to a common multiple of 2 and 3
   maxSidebarTagChip: 12,
   maxFooterCategoryChip: 6,
   maxFooterTagChip: 24,
 
   banners: [
-    "https://s2.loli.net/2025/01/25/PBvHFjr5yDu6t4a.webp",
-    "https://s2.loli.net/2025/01/25/6bKcwHZigzlM4mJ.webp",
-    "https://s2.loli.net/2025/01/25/H9WgEK6qNTcpFiS.webp",
-    "https://s2.loli.net/2025/01/25/njNVtuUMzxs81RI.webp",
-    "https://s2.loli.net/2025/01/25/tozsJ8QHAjFN3Mm.webp",
-    "https://s2.loli.net/2025/01/25/Pm89OveZq7NWUxF.webp",
-    "https://s2.loli.net/2025/01/25/UCYKvc1ZhgPHB9m.webp",
-    "https://s2.loli.net/2025/01/25/JjpLOW8VSmufzlA.webp",
+    "https://i.postimg.cc/N0Dh8VpQ/2.jpg",
+    "https://i.postimg.cc/Sx7jcJzP/3.jpg",
+    "https://i.postimg.cc/qRY7pK9N/1.jpg",
+    "https://i.postimg.cc/zGjTSJLx/1.png",
+    "https://i.postimg.cc/qRY7pK9N/1.jpg",
+    "https://i.postimg.cc/zGjTSJLx/1.png",
+    "https://i.postimg.cc/gwxBmgC7/2.jpg",
+    "https://i.postimg.cc/5tbdC15P/3.jpg",
   ],
 
   slugMode: "HASH", // 'RAW' | 'HASH'

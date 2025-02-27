@@ -1,5 +1,13 @@
-# Special thanks to:
+**医忏**，某艺术类院校本科在读，大数据专业。
 
-- [Hexo Shoka theme](https://github.com/amehime/hexo-theme-shoka) for providing design inspiration
+不善于写代码，离开ai我几乎没办法进行编程。
 
-- [Astro Fuwari template](https://github.com/saicaca/fuwari) for providing the main design concept and part of the implementation
+相对来说更喜欢艺术、文学、音乐、诗歌，但也只是浅尝辄止。
+
+随缘更新博客，很多时候不更新不是因为我死了而是因为我忘了
+
+去年写过几份日记，慢慢迁移到博客中……
+
+如果有时间会给博客增加一些功能！比方说部署到域名上、开放友链、增加ai客服、替换字体等等……
+
+慢慢来吧😊。
