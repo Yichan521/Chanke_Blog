@@ -2,7 +2,7 @@ import I18nKeys from "./src/locales/keys";
 import type { Configuration } from "./src/types/config";
 
 const YukinaConfig: Configuration = {
-  title: "Chanke",
+  title: "Chanke's Blog",
   subTitle: "Chanke's Blog",
   brandTitle: "Chanke",
 
@@ -27,7 +27,7 @@ const YukinaConfig: Configuration = {
     },
     {
       nameKey: I18nKeys.nav_bar_github,
-      href: "https://github.com/Yichan521",
+      href: "https://github.com/Yichan521/Chanke_Blog",
     },
   ],
 
