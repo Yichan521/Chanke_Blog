@@ -9,6 +9,8 @@ enum I18nKeys {
   nav_bar_github = "nav_bar_github",
   nav_bar_search_placeholder = "nav_bar_search_placeholder",
 
+  theme_color_title = "theme_color_title",
+
   post_card_words = "post_card_words",
   post_card_minutes = "post_card_minutes",
 

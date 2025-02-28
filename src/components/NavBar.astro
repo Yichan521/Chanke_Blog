@@ -3,10 +3,10 @@ import YukinaConfig from "../../yukina.config";
 import { i18n } from "../locales/translation";
 
 import { Icon } from "astro-icon/components";
+import ColorPicker from "./widgets/ColorPicker.svelte";
 import SearchBar from "./SearchBar.svelte";
 import MobileSearchBar from "./MobileSearchBar.svelte";
 import "astro-pagefind";
-
 const navCount = YukinaConfig.navigators.length;
 ---
 
@@ -53,12 +53,14 @@ const navCount = YukinaConfig.navigators.length;
       }
     </div>
     <div class="toolbar">
+      <ColorPicker client:only="svelte" />
       <div class="lg:hidden">
         <MobileSearchBar client:only="svelte" />
       </div>
       <div class="hidden lg:block">
         <SearchBar client:only="svelte" />
       </div>
+      
       <div class="theme">
         <button type="button" id="theme-switcher">
           <Icon
