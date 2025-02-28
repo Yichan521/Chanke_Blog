@@ -7,7 +7,7 @@ import { GetTags } from "../../utils/content";
 const tags = [...(await GetTags()).values()].sort();
 const chips = tags.map((tag) => {
   return {
-    name: tag.name,
+    name:  tag.name,
     slug: tag.slug,
     subChip: tag.posts.length.toString(),
   };

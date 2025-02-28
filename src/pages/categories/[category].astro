@@ -8,7 +8,9 @@ export async function getStaticPaths() {
   const categories = await GetCategories();
   const categoryList = Array.from(categories.keys());
   return categoryList.map((category) => ({
-    params: { category: category },
+    params: { 
+      category: category 
+    },
   }));
 }
 

@@ -8,7 +8,9 @@ export async function getStaticPaths() {
   const tags = await GetTags();
   const tagList = Array.from(tags.keys());
   return tagList.map((tag) => ({
-    params: { tag: tag },
+    params: { 
+      tag: tag 
+    },
   }));
 }
 
