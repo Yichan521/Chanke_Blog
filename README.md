@@ -1,2 +1,2 @@
 ### 如果您看到这个界面，代表我尝试部署尝试得心疲力竭……
-### 感谢https://github.com/WhitePaper233/yukina提供了如此精美的模板
+### 感谢 https://github.com/WhitePaper233/yukina 提供了如此精美的模板
