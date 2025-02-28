@@ -11,6 +11,7 @@
   "build:gh-page": "astro check && astro build",
   "dependencies": {
     "@astrojs/check": "^0.9.4",
+    "@astrojs/deno": "^5.0.1",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/svelte": "^7.0.3",
