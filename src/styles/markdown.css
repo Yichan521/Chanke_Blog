@@ -8,7 +8,7 @@
 
 .article code:not(pre code) {
   @apply text-sm;
-  font-family: var(--code-font) !important;
+  font-family: 'ChillRoundM', var(--code-font) !important; /* 新增字体 */
   border-radius: 4px;
   color: var(--primary-color) !important;
   background-color: var(--primary-color-lighten) !important;
@@ -109,7 +109,11 @@
 .article span.line {
   font-size: 14px !important;
   line-height: normal;
-  font-family: var(--code-font) !important;
+  font-family: 'ChillRoundM', var(--code-font) !important; /* 新增字体 */
+}
+
+.article {
+  font-family: 'ChillRoundM', sans-serif; /* 设置全文字体 */
 }
 
 .article code {
@@ -137,6 +141,7 @@
 }
 
 .article .astro-code {
+  font-family: var(--code-font) !important; /* 保持原有代码字体 */
   border-radius: 0.75rem !important;
   scrollbar-width: thin;
 }
