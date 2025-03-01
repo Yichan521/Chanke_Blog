@@ -72,9 +72,10 @@
   button {
     display: flex;
     width: auto;
-    height: 100px;
+    /* height: 100px; */
     padding: 0 1.75rem;
     justify-content: center;
+    align-items: center;
     border-radius: 0.5rem;
     transition: all 0.2s ease;
     font-size: 4rem;
