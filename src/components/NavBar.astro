@@ -44,6 +44,7 @@ const navCount = YukinaConfig.navigators.length;
       </div>
     </a>
     <div class="menu">
+      <ColorPicker client:only="svelte" />
       {
         YukinaConfig.navigators.map((nav) => (
           <a href={nav.href}>
@@ -53,7 +54,7 @@ const navCount = YukinaConfig.navigators.length;
       }
     </div>
     <div class="toolbar">
-      <ColorPicker client:only="svelte" />
+      <!-- <ColorPicker client:only="svelte" /> -->
       <div class="lg:hidden">
         <MobileSearchBar client:only="svelte" />
       </div>
@@ -89,7 +90,9 @@ const navCount = YukinaConfig.navigators.length;
           <li class="mt-1">
             <a href={nav.href} class="mobile-nav-item">
               <div class="flex flex-row items-center space-x-2">
-                <span class="text-[var(--primary-color)]">·</span>
+                <span class="text-[var(--primary-color)]">
+                  ·
+                </span>
                 <span>{i18n(nav.nameKey)}</span>
               </div>
               <Icon
@@ -100,10 +103,17 @@ const navCount = YukinaConfig.navigators.length;
           </li>
         ))
       }
+      <div class="flex flex-row items-center space-x-2">
+          <span class="text-[var(--text-color-lighten)]">
+            .
+          </span>
+          <span>
+            <ColorPicker client:only="svelte" />
+            </span>
+        </div>
     </ul>
   </div>
 </nav>
-
 <style define:vars={{ navCount }}>
   .nav {
     @apply fixed left-1/2 z-10 flex w-full select-none flex-col justify-end rounded-b-xl bg-[var(--card-color-transparent)] px-2.5 opacity-0 backdrop-blur-md transition-all;
