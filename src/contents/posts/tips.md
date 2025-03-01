@@ -1,7 +1,7 @@
 ---
 title: 关于hugo搭建个人博客可能会遇到的一些问题
 published: 2024-03-09
-description: A simple example of a Markdown blog post.
+description: 我已经放弃更新这个文章了，因为没遇到什么问题。
 tags: [Hugo]
 category: Hugo
 draft: false
