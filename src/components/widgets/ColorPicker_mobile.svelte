@@ -3,8 +3,8 @@
   import key from "../../locales/keys";
 
     // 新增颜色配置常量
-  const TEXT_L = 30;       // 文字基础明度（保持与--text-color一致）
-  const TEXT_C = 0.07;     // 文字色度（比主色低50%保证可读性）
+  const TEXT_L = 70;       // 文字基础明度（保持与--text-color一致）
+  const TEXT_C = 0.15;     // 文字色度（比主色低50%保证可读性）
   const HOVER_C = 0.12;    // 悬停状态色度提升
   let hue = 140;
   let textColor = "var(--text-color)";
@@ -16,8 +16,8 @@
     
     // 动态生成OKLCH颜色，根据状态切换色度
     textColor = `oklch(
-      ${TEXT_L}% 
-      ${isHovered ? HOVER_C : TEXT_C} 
+      70% 
+      0.15
       ${hue}
     )`;
   }
@@ -92,11 +92,10 @@
   button {
     display: flex;
     width: auto;
-    height: 26px;
-    padding-top: -10px;
+    height: 40px;
+    /* padding-top: -10px; */
     font-family: 'ChillRoundM', sans-serif;
-    justify-content: center;
-    align-items: center;
+    align-items: top;
     border-radius: 0.5rem;
     transition: all 0.2s ease;
     font-size: 20px;
@@ -110,7 +109,7 @@
   .slider-container {
     position: absolute;
     bottom: 60%;  /* 改为父元素顶部 */
-    left: 50%;
+    left: 90%;
     transform: translateX(-50%);
     margin-bottom: 0.5rem;  /* 替换原来的margin-top */
     padding: 0.5rem;
@@ -127,7 +126,7 @@
     background: linear-gradient(
       to right,
       oklch(70% 0.15 0),     /* 0° 红 */
-      oklch(90% 0.15 60),    /* 60° 黄 */
+      oklch(70% 0.15 60),    /* 60° 黄 */
       oklch(70% 0.15 120),   /* 120° 绿 */
       oklch(70% 0.15 180),   /* 180° 青 */
       oklch(70% 0.15 240),   /* 240° 蓝 */

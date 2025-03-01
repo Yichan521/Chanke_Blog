@@ -54,14 +54,14 @@ const YukinaConfig: Configuration = {
   maxFooterTagChip: 24,
 
   banners: [
-    "https://i.postimg.cc/N0Dh8VpQ/2.jpg",
-    "https://i.postimg.cc/Sx7jcJzP/3.jpg",
-    "https://i.postimg.cc/qRY7pK9N/1.jpg",
-    "https://i.postimg.cc/zGjTSJLx/1.png",
-    "https://i.postimg.cc/qRY7pK9N/1.jpg",
-    "https://i.postimg.cc/zGjTSJLx/1.png",
-    "https://i.postimg.cc/gwxBmgC7/2.jpg",
-    "https://i.postimg.cc/5tbdC15P/3.jpg",
+    "/images/长崎素世1.png",
+    "/images/罗小黑1.jpg",
+    "/images/罗小黑2.jpg",
+    "/images/罗小黑3.jpg",
+    // "https://i.postimg.cc/qRY7pK9N/1.jpg",
+    // "https://i.postimg.cc/zGjTSJLx/1.png",
+    // "https://i.postimg.cc/gwxBmgC7/2.jpg",
+    // "https://i.postimg.cc/5tbdC15P/3.jpg",
   ],
 
   slugMode: "HASH", // 'RAW' | 'HASH'

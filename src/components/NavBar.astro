@@ -87,7 +87,8 @@ const navCount = YukinaConfig.navigators.length;
       class="mobile-menu-nav mobile-menu-nav-closed flex flex-col space-y-6 overflow-hidden text-xl font-medium text-[var(--text-color)] transition-all duration-300"
     >
       {
-        YukinaConfig.navigators.map((nav) => (
+        YukinaConfig.navigators.map(
+          (nav) => (
           <li class="mt-1">
             <a href={nav.href} class="mobile-nav-item">
               <div class="flex flex-row items-center space-x-2">
@@ -100,13 +101,13 @@ const navCount = YukinaConfig.navigators.length;
               />
             </a>
           </li>
-        ))
+        )
+      )
       }
       {
         (
           <li class="mt-1">
             <div class="flex flex-row items-center space-x-2">
-              <span class="text-[var(--text-color-lighten)]">·</span>
               <span>
                 <ColorPicker_mobile client:only="svelte" />
               </span>
