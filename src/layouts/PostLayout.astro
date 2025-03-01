@@ -2,7 +2,10 @@
 import Main from "../layouts/MainLayout.astro";
 import Markdown from "../components/Markdown.astro";
 import CopyRight from "../components/misc/CopyRight.astro";
+import Comments from "../components/Comment";
 
+
+// <Comments client:only="react" />
 interface Props {
   title?: string;
   subTitle?: string;
@@ -46,7 +49,9 @@ const {
         )
       }
     </div>
+    <Comments client:only="react" />
   </div>
+  
 </Main>
 
 <style>
@@ -57,4 +62,25 @@ const {
     @apply flex flex-col;
     font-size: var(--primary-font);
   }
+
+  .giscus {
+      
+  }
+  
 </style>
+<script src="https://giscus.app/client.js"
+          data-repo="Yichan521/Chanke_Blog"
+          data-repo-id="R_kgDOOAzARA"
+          data-category="Announcements"
+          data-category-id="DIC_kwDOOAzARM4Cndlp"
+          data-mapping="title"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="preferred_color_scheme"
+          data-lang="zh-CN"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
