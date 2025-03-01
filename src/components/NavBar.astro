@@ -44,7 +44,7 @@ const navCount = YukinaConfig.navigators.length;
       </div>
     </a>
     <div class="menu">
-      <ColorPicker client:only="svelte" />
+      <!-- <ColorPicker client:only="svelte" /> -->
       {
         YukinaConfig.navigators.map((nav) => (
           <a href={nav.href}>
@@ -54,7 +54,7 @@ const navCount = YukinaConfig.navigators.length;
       }
     </div>
     <div class="toolbar">
-      <!-- <ColorPicker client:only="svelte" /> -->
+      <ColorPicker client:only="svelte" />
       <div class="lg:hidden">
         <MobileSearchBar client:only="svelte" />
       </div>

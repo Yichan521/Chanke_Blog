@@ -72,13 +72,12 @@
   button {
     display: flex;
     width: auto;
-    height: auto;
-    padding: 0 0.75rem;
+    height: 100px;
+    padding: 0 1.75rem;
     justify-content: center;
     border-radius: 0.5rem;
     transition: all 0.2s ease;
-    font-size: 1.5rem;
-    font-weight: bolder;
+    font-size: 4rem;
   }
 
   button:hover {
