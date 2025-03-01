@@ -10,6 +10,7 @@ enum I18nKeys {
   nav_bar_search_placeholder = "nav_bar_search_placeholder",
 
   theme_color_title = "theme_color_title",
+  theme_color_title1 = "theme_color_title1",
 
   post_card_words = "post_card_words",
   post_card_minutes = "post_card_minutes",

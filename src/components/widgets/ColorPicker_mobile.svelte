@@ -48,7 +48,7 @@
   on:mouseenter={() => isHovered = true}
   on:mouseleave={() => isHovered = false}
 >
-  <button style="color: {textColor};">{i18n(key.theme_color_title)}</button>
+  <button style="color: {textColor};">{i18n(key.theme_color_title1)}</button>
   {#if isHovered}
     <div class="slider-container">
       <input
@@ -64,6 +64,26 @@
 </div>
 
 <style>
+  @font-face {
+      font-family: "Baloo 2";
+      src: url("/Baloo2-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Baloo 2";
+      src: url("/Baloo2-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "ChillRoundM";
+      src: url("/ChillRoundM.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
   .theme-color-button {
     position: relative;
     display: inline-block;
@@ -72,13 +92,14 @@
   button {
     display: flex;
     width: auto;
-    height: 100px;
-    padding: 0 0.5rem 0.6rem;
+    height: 26px;
+    padding-top: -10px;
+    font-family: 'ChillRoundM', sans-serif;
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
     transition: all 0.2s ease;
-    font-size: 4rem;
+    font-size: 20px;
   }
 
   button:hover {
@@ -88,10 +109,10 @@
 
   .slider-container {
     position: absolute;
-    top: 50%;
+    bottom: 60%;  /* 改为父元素顶部 */
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;  /* 替换原来的margin-top */
     padding: 0.5rem;
     background-color: var(--card-color);
     border-radius: 0.5rem;

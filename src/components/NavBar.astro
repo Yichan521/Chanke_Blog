@@ -4,6 +4,7 @@ import { i18n } from "../locales/translation";
 
 import { Icon } from "astro-icon/components";
 import ColorPicker from "./widgets/ColorPicker.svelte";
+import ColorPicker_mobile from "./widgets/ColorPicker_mobile.svelte";
 import SearchBar from "./SearchBar.svelte";
 import MobileSearchBar from "./MobileSearchBar.svelte";
 import "astro-pagefind";
@@ -44,7 +45,7 @@ const navCount = YukinaConfig.navigators.length;
       </div>
     </a>
     <div class="menu">
-      <!-- <ColorPicker client:only="svelte" /> -->
+      <ColorPicker client:only="svelte" />
       {
         YukinaConfig.navigators.map((nav) => (
           <a href={nav.href}>
@@ -54,14 +55,14 @@ const navCount = YukinaConfig.navigators.length;
       }
     </div>
     <div class="toolbar">
-      <ColorPicker client:only="svelte" />
+      <!-- <ColorPicker client:only="svelte" /> -->
       <div class="lg:hidden">
         <MobileSearchBar client:only="svelte" />
       </div>
       <div class="hidden lg:block">
         <SearchBar client:only="svelte" />
       </div>
-      
+
       <div class="theme">
         <button type="button" id="theme-switcher">
           <Icon
@@ -90,9 +91,7 @@ const navCount = YukinaConfig.navigators.length;
           <li class="mt-1">
             <a href={nav.href} class="mobile-nav-item">
               <div class="flex flex-row items-center space-x-2">
-                <span class="text-[var(--primary-color)]">
-                  ·
-                </span>
+                <span class="text-[var(--primary-color)]">·</span>
                 <span>{i18n(nav.nameKey)}</span>
               </div>
               <Icon
@@ -103,14 +102,18 @@ const navCount = YukinaConfig.navigators.length;
           </li>
         ))
       }
-      <div class="flex flex-row items-center space-x-2">
-          <span class="text-[var(--text-color-lighten)]">
-            .
-          </span>
-          <span>
-            <ColorPicker client:only="svelte" />
-            </span>
-        </div>
+      {
+        (
+          <li class="mt-1">
+            <div class="flex flex-row items-center space-x-2">
+              <span class="text-[var(--text-color-lighten)]">·</span>
+              <span>
+                <ColorPicker_mobile client:only="svelte" />
+              </span>
+            </div>
+          </li>
+        )
+      }
     </ul>
   </div>
 </nav>
@@ -195,7 +198,8 @@ const navCount = YukinaConfig.navigators.length;
 
   .mobile-menu-nav-opened {
     @apply opacity-100;
-    height: calc(var(--navCount) * 52px);
+    height: calc((var(--navCount)+1) * 52px);
+    justify-items: center;
   }
 
   .mobile-menu-nav li a {
