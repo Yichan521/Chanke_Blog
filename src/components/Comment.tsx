@@ -50,7 +50,7 @@ const Comments = () => {
           repoId="R_kgDOOAzARA"
           category="Announcements"
           categoryId="DIC_kwDOKeudT84Cch4W"
-          mapping="title"
+          mapping="pathname"
           reactionsEnabled="1"
           emitMetadata="0"
           inputPosition="top"
