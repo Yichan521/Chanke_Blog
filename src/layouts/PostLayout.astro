@@ -2,7 +2,9 @@
 import Main from "../layouts/MainLayout.astro";
 import Markdown from "../components/Markdown.astro";
 import CopyRight from "../components/misc/CopyRight.astro";
-import Comments from "../components/Comment";
+
+import Comment from "../components/Comment.astro";
+
 
 
 // <Comments client:only="react" />
@@ -49,7 +51,7 @@ const {
         )
       }
     </div>
-    <Comments client:only="react" />
+    <Comment />
   </div>
   
 </Main>
